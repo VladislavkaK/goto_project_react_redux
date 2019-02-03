@@ -11,8 +11,13 @@
             position: relative;
             border: 1px solid black;
             padding: 0;
+            
             &.col-4 {
                 height: 400px;
+            }
+
+            .list-group-item {
+                cursor: pointer;
             }
 
             .btn-default {

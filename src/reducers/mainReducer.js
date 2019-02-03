@@ -20,7 +20,7 @@ const initialState = {
     //     }
     // ]
     folders: [],
-    tasks: []
+    tasks: [],
 }
 function mainReducer(state = initialState, action = {}) {
     // Когда будет вызван dispatch({ type: 'FILL_STATE', payload: { menu: [...], tasks: [...] } })
@@ -28,7 +28,7 @@ function mainReducer(state = initialState, action = {}) {
     // Содержимое state будет целиком перезаписано payload
     switch (action.type) {
         case FILL_STATE:
-            return FILL_STATE_FUNC(state, action);
+            return FILL_STATE_FUNC(state, action); 
         default:
             // Если никакой action.type не удовлетворил условие, то возвращается state без изменения
             // Экшены проходят через все редьюсеры, которые добавили в приложение, и не все экшены могут интересовать нашь редьюсер

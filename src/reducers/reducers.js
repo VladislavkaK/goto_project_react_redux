@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux';
 
 import mainReducer from './mainReducer';
+import uiReducer from './uiReducer';
 
-const appReducer = combineReducers({ mainReducer });
+const appReducer = combineReducers({ mainReducer, ui: uiReducer });
 
 const rootReducer = (state, action) => {
 

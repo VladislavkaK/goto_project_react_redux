@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import LeftMenu from '../components/LeftMenu';
 import TaskArea from '../components/TaskArea';
 import loadTodoData from '../actions/loadTodoData';
-
+import initCurrentFolder from '../actions/initCurrentFolder';
 class Container extends Component {
 
     componentDidMount() {
@@ -42,7 +42,8 @@ export function mapDispatchToProps(dispatch) {
             и прокидываем данные в props
         */
         init() {
-            dispatch(loadTodoData());
+            dispatch(loadTodoData())
+                .then(dispatch(initCurrentFolder()))
         }
     }
 }
