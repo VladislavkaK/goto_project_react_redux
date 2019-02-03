@@ -1,7 +1,25 @@
 import { ACTION_NAME } from '../constants/index';
 
 const initialState = {
-    nothing: 'here'
+    menu: [
+        {
+            name: 'Входящие'
+        },
+        {
+            name: 'Работа'
+        }
+    ],
+    tasks: [
+        {
+            name: 'Задача 1'
+        },
+        {
+            name: 'Задача 2'
+        },
+        {
+            name: 'Задача 3'
+        }
+    ]
 }
 function mainReducer(state = initialState, action = {}) {
 

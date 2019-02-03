@@ -6,12 +6,12 @@ import '../styles/App.scss';
 
 import Container from '../containers/Container';
 
-class App extends Component {
+class TodoApp extends Component {
   render() {
     return (
       <Provider store={store}>
-        <div className="App">
-            <h1>goto тренировка</h1>
+        <div className="TodoApp">
+            <h1 style={{textAlign:"center"}}>TodoList нового поколения</h1>
             <Container />
         </div>
       </Provider>
@@ -19,4 +19,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default TodoApp;

@@ -1,8 +1,48 @@
 @media only screen and (max-width: 1980px) {
     
-    .App {
-        display: flex;
-        width: 700px;
-        border: 1px solid black;
+    .TodoApp {
+        margin-left: 30%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 60%;
+        
+
+        .LeftMenu {
+            position: relative;
+            border: 1px solid black;
+            padding: 0;
+            &.col-4 {
+                height: 400px;
+            }
+
+            .btn-default {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            } 
+        }
+
+        .TaskArea {
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+
+            .form-control {
+                margin-top: 15px;
+                margin-bottom: 25px;
+            }
+
+            .TaskList__Task {
+                margin-bottom: 15px;
+                .form-check-label {
+                    margin-left: 25px;
+                }
+                
+            }
+            .form-check-input {
+                margin: 1px;
+                margin-top: 6px;
+            }
+        }
     }
 }

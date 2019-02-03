@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import LeftMenu from '../components/LeftMenu';
+import TaskArea from '../components/TaskArea';
 class Container extends Component {
 
     render() {
 
-        let { state, nothing } = this.props;
-
         return (
-          <div className="Container">
-            Вывод из props <h2>{nothing}</h2>
+          <div className="row Container">
+                <LeftMenu />
+
+                <TaskArea />
           </div>
         );
 
@@ -19,7 +21,6 @@ export function mapStateToProps(state) {
 
     return {
         'state': state,
-        'nothing': state.mainReducer.nothing
     };
 
 }
