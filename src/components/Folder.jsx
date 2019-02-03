@@ -4,13 +4,13 @@ class Folder extends React.Component {
 
     render() {
 
-        let { menu } = this.props;
+        let { folders } = this.props;
         
-        let menuItems = menu.map((item,i) => {
+        let menuItems = folders.map((item,i) => {
             
             return (
                 <li key={i} className={`list-group-item FolderList__Folder--${i}`}>
-                    {item.name}
+                    {item}
                 </li>
             );
         });
@@ -23,7 +23,7 @@ class Folder extends React.Component {
 export function mapStateToProps(state) {
 
     return {
-        'menu': state.mainReducer.menu
+        'folders': state.mainReducer.folders
     };
 
 }

@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import store from '../store/store';
+import { connect } from 'react-redux';
 // import '../styles/App.css';
 import '../styles/App.scss';
 
 import Container from '../containers/Container';
 
 class TodoApp extends Component {
+
   render() {
     return (
       <Provider store={store}>

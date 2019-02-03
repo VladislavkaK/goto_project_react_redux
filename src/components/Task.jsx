@@ -11,7 +11,7 @@ class Task extends React.Component {
             return (
                 <li key={i} className={`list-group-item form-check TaskList__Task TaskList__Task--${i}`}>
                    <input className="form-check-input" type="checkbox" id="gridCheck1" />
-                   <label className="form-check-label" htmlFor="gridCheck1">{item.name}</label>
+                   <label className="form-check-label" htmlFor="gridCheck1">{item.title}</label>
                 </li>
                 
             );

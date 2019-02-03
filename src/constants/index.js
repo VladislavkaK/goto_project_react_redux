@@ -1,1 +1,1 @@
-export const ACTION_NAME = 'ACTION_NAME';
+export const FILL_STATE = 'FILL_STATE';
