@@ -1,4 +1,8 @@
 import { FILL_STATE } from '../constants/index';
+
+/* 1) Делаем запрос к серверу на получение данных и 
+    отправляем полученные данные при успехе в action.payload */
+
 export default function loadTodoData() {
 
     // Эту анонимную функцию он выполняет, передав аргуметом dispatch

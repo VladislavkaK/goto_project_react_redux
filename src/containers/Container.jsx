@@ -7,7 +7,9 @@ import loadTodoData from '../actions/loadTodoData';
 class Container extends Component {
 
     componentDidMount() {
-        //вызывает init из mapDispatchToProps
+        /* 
+            3) Вызываем функцию init() после отправке данных в props
+        */
         this.props.init();
     }
 
@@ -35,9 +37,13 @@ export function mapStateToProps(state) {
 export function mapDispatchToProps(dispatch) {
     
     return {
-      init() {
-        dispatch(loadTodoData());
-      }
+        /* 
+            2) Вызываем импортированную функцию loadTodoData из actions/ 
+            и прокидываем данные в props
+        */
+        init() {
+            dispatch(loadTodoData());
+        }
     }
 }
 
