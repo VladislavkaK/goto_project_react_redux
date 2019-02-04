@@ -4,6 +4,7 @@ import LeftMenu from '../components/LeftMenu';
 import TaskArea from '../components/TaskArea';
 import loadTodoData from '../actions/loadTodoData';
 import initCurrentFolder from '../actions/initCurrentFolder';
+
 class Container extends Component {
 
     componentDidMount() {
@@ -17,9 +18,9 @@ class Container extends Component {
 
         return (
           <div className="row Container">
-                <LeftMenu />
+                <LeftMenu  />
 
-                <TaskArea />
+                <TaskArea  />
           </div>
         );
 
@@ -27,7 +28,7 @@ class Container extends Component {
 }
 
 export function mapStateToProps(state) {
-
+// console.log(state)
     return {
         'state': state,
     };
@@ -43,7 +44,7 @@ export function mapDispatchToProps(dispatch) {
         */
         init() {
             dispatch(loadTodoData())
-                .then(dispatch(initCurrentFolder()))
+                .then(() => { dispatch(initCurrentFolder()) })
         }
     }
 }

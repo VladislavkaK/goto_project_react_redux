@@ -3,6 +3,7 @@ import { SET_CURRENT_FOLDER } from '../constants/index';
 const initialState = {
     currentFolder: null
 };
+
 function uiReducer(state = initialState, action = {}) {
   
     switch (action.type) {
@@ -15,16 +16,7 @@ function uiReducer(state = initialState, action = {}) {
 }
 
 function SET_CURRENT_FOLDER_FUNC(state, action) {
-    // let names = state.currentFolder.map((item, i) => {
-    //     if(i !== action.payload.id) {
-    //         return item;
-    //     }
-
-    //     return {...item, currentFolder : item};
-    // });
-
-    // return { ...state, names}; 
-    return state;
+    return {...state, currentFolder: action.payload.folderName};
 }
 
 export default uiReducer;

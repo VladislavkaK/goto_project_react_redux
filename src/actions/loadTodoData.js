@@ -1,4 +1,4 @@
-import { FILL_STATE } from '../constants/index';
+import {FILL_STATE, SET_CURRENT_FOLDER} from '../constants/index';
 
 /* 1) Делаем запрос к серверу на получение данных и 
     отправляем полученные данные при успехе в action.payload */

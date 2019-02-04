@@ -4,8 +4,8 @@ export default function initCurrentFolder () {
     
     return function (dispatch, getState) {
         const state = getState();
-       
-        dispatch({type: SET_CURRENT_FOLDER, payload: { currentFolder: state.mainReducer.folders[0] }});
+
+        dispatch({type: SET_CURRENT_FOLDER, payload: { folderName: state.mainReducer.folders[0] }});
     };
 
 }
