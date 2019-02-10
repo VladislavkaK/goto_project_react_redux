@@ -5,6 +5,8 @@ const initialState = {
     //     'Входящие',
     //     'Работа'
     // ],
+
+    folders: [],
     // tasks: [
     //     {
     //         title: "Задача 1",
@@ -19,7 +21,6 @@ const initialState = {
     //         folder: 'Работа'
     //     }
     // ]
-    folders: [],
     tasks: [],
 }
 function mainReducer(state = initialState, action = {}) {
