@@ -5,7 +5,7 @@ import Task from '../components/Task';
 class TaskList extends Component {
 
     render() {
-      let {currentTask} = this.props;
+      let { currentTask } = this.props;
 
       return (
         <ul className="list-group">
@@ -30,7 +30,11 @@ class TaskList extends Component {
 
 // Селектор, возвращает название задачи
 function getFolder(state, currentFolder) {
-  let folder = state.mainReducer.tasks.filter((name, index) => {
+  let newTasks = state.todo.tasks;
+  let { tasks } = state.mainReducer;
+  let allTasks = Object.assign(newTasks, tasks);
+
+  let folder = allTasks.filter((name, index) => {
       return name.folder === currentFolder;
   })
   
@@ -41,7 +45,8 @@ export function mapStateToProps(state) {
 
   return {
       'tasks': state.mainReducer.tasks,
-      'currentTask': getFolder(state, state.ui.currentFolder)
+      'currentTask': getFolder(state, state.ui.currentFolder),
+      // 'newTasks': state.todo.tasks 
   };
 
 }

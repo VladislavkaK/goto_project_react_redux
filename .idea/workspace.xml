@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42bc6150-bb29-4f81-a4a5-e7e2b14ad70d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/initCurrentFolder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/initCurrentFolder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/loadTodoData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/loadTodoData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Folder.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Folder.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Task.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Task.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Container.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/FolderList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/FolderList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/uiReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/uiReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/containers/Container.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="461">
@@ -101,7 +93,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/actions/initCurrentFolder.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -227,7 +219,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DocumentEditor/src/HeavenlyComponents" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="C:\goto_project_react_redux\node_modules\eslint" />
@@ -260,16 +252,15 @@
       <workItem from="1549274948552" duration="885000" />
       <workItem from="1549277611332" duration="64000" />
       <workItem from="1549277688616" duration="30000" />
-      <workItem from="1549285925292" duration="5364000" />
+      <workItem from="1549285925292" duration="6110000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6343000" />
+    <option name="totallyTimeSpent" value="7089000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -404,6 +395,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/initCurrentFolder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Container.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
@@ -411,13 +409,6 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/initCurrentFolder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>

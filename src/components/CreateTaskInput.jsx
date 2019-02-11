@@ -28,14 +28,21 @@ class CreateTaskInput extends React.Component {
 
     });
 
+    updateText = (e => {
+        this.setState({ task: e.target.value });
+    });
+
     render() {
-//TODO: что не так?
+    //TODO: что не так?
         return (
             <form className="form-inline" onSubmit={this.handleSubmit} >
                 <input type="text" 
                     className="form-control mr-sm-2" 
                     placeholder="Введите задачу..." 
+                    onChange={this.updateText}
+                    value={this.state.task}
                 />
+                {/* <input className="btn btn-outline-success my-2 my-sm-0" type="submit" value="Добавить" /> */}
             </form>
         );
     }

@@ -16,10 +16,9 @@ function todoReducer (state = initialState, action) {
 
 function ADD_TASK_FUNC(state, action) {
     let title = action.payload.title;
-    let currentFolder = action.payload.folderName;
+    let folder = action.payload.folderName;
     
-    //TODO: что не так?
-    return { ...state, tasks:  { title, currentFolder } }; 
+    return { ...state, tasks:  [...state.tasks, { title, folder }] }; 
 }
 
 export default todoReducer;
